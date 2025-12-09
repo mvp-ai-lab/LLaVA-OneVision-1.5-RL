@@ -1,6 +1,6 @@
 <p align="center">
   <picture>
-    <img alt="LLaVA-OneVision-1.5-RL" src="./asset/logo.jpg" width="600" style="max-width: 100%;">
+    <img alt="LLaVA-OneVision-1.5-RL" src="./asset/logo.png" width="600" style="max-width: 100%;">
   </picture>
 </p>
 
