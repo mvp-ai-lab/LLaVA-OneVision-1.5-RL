@@ -12,7 +12,8 @@
 
 <div align="center">
 
-🤗 **[Models and Datasets](https://huggingface.co/)** |
+🤗 **[Models](https://huggingface.co/mvp-lab/LLaVA-OV-1.5-8B-RL)** |
+🤗 **[Datasets](https://huggingface.co/datasets/mvp-lab/LLaVA-OneVision-1.5-RL-Data)** |
 📄 **[Technical Report](https://arxiv.org/abs/2509.23661)** |
 📕 **[Xiaohongshu](http://xhslink.com/)**
 
@@ -28,6 +29,14 @@
   <!-- PRs Welcome -->
   <a href="https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-1.5/pulls">
     <img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github&amp">
+  </a>
+  <!-- Model Downloads -->
+  <a href="https://huggingface.co/mvp-lab/LLaVA-OV-1.5-8B-RL">
+    <img alt="HF Model Downloads" src="https://img.shields.io/badge/dynamic/json?url=https://huggingface.co/api/models/mvp-lab/LLaVA-OV-1.5-8B-RL&amp;query=downloads&amp;label=OV-1.5-8B-RL%20Downloads&amp;color=yellow&amp;logo=huggingface&amp">
+  </a>
+  <!-- Dataset Downloads -->
+  <a href="https://huggingface.co/datasets/mvp-lab/LLaVA-OneVision-1.5-RL-Data">
+    <img alt="HF RL Dataset Downloads" src="https://img.shields.io/badge/dynamic/json?url=https://huggingface.co/api/datasets/mvp-lab/LLaVA-OneVision-1.5-RL-Data&amp;query=downloads&amp;label=RL%20DATA%20Downloads&amp;color=blue&amp;logo=huggingface&amp">
   </a>
 </p>
 
@@ -67,14 +76,14 @@
 
 | Model                    | HF Link                                                                                      | Training Log |
 |--------------------------|--------------------------------------------------------------------------------------------------------|-------------|
-| LLaVA-OneVision-1.5-8B-RL | [🤗 HF / 8B-RL](https://huggingface.co/mvp-lab/LLaVA-OneVision-1.5-8B-RL)                | [📈 WANDB](https://huggingface.co/) |
+| LLaVA-OneVision-1.5-8B-RL | [🤗 HF / 8B-RL](https://huggingface.co/mvp-lab/LLaVA-OneVision-1.5-8B-RL)                | [📈 WANDB](https://wandb.ai/geoffrey-chen/LLaVA-OneVision-1.5-RL) |
 ## Datasets
 
-![Dataset Visualization](asset/dataset.jpg)
+![Dataset Visualization](asset/data_dist.png)
 
 | Description        | Link                                                                                                   | Status      |
 |--------------------|--------------------------------------------------------------------------------------------------------|-------------|
-| LLaVA-OneVision-1.5-RL-Data   | [🤗HF / RL Data](https://huggingface.co/) | Coming soon  |
+| LLaVA-OneVision-1.5-RL-Data   | [🤗HF / RL Data](https://huggingface.co/datasets/mvp-lab/LLaVA-OneVision-1.5-RL-Data) | Available |
 
 
 ## Evaluation Results
@@ -125,7 +134,7 @@ hf download lmms-lab/LLaVA-OneVision-1.5-8B-Instruct --local-dir ./pretrained/LL
 cp ./3rdparty/modeling/modeling_llavaonevision1_5.py ./pretrained/LLaVA-OneVision-1.5-8B-Instruct/
 
 # Prepare the data
-mkdir data
+hf download mvp-lab/LLaVA-OneVision-1.5-RL-Data --repo-type dataset --local-dir ./data
 
 # Demo command to create training data (optional, you can directly download from HF)
 python -m dataset.create --model-name ./pretrained/LLaVA-OneVision-1.5-8B-Instruct --rollout-n 10 --dataset-name unisvg --num-workers 8 --output-dir ./data/stage2 --dataset-size 200
@@ -175,6 +184,13 @@ Thanks so much to all of our amazing contributors!
                     <img src="https://avatars.githubusercontent.com/u/23383574?v=4" width="80;" alt="gkagkos (Polydefkis Gkagkos)"/>
                     <br />
                     <sub><b>Polydefkis Gkagkos</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/anxiangsir">
+                    <img src="https://avatars.githubusercontent.com/u/31175974?v=4" width="80;" alt="anxiangsir (Xiang An)"/>
+                    <br />
+                    <sub><b>Xiang An</b></sub>
                 </a>
             </td>
 		</tr>

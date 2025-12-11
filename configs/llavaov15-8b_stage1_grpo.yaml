@@ -105,7 +105,7 @@ train_dataset:
   shuffle: true
   pin_memory: true
   num_workers: 4
-  path: ./data/LLaVA-OneVision-1.5-RL-Data-stage1
+  path: ./data/stage1-normal
   type: rl
 
 # Utilities
