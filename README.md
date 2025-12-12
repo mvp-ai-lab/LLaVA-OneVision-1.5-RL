@@ -1,3 +1,13 @@
+<p align="center" style="padding: 20px; border-radius: 10px;">
+  <strong style="font-size:28px; color:#FF6B6B;">⚠️⚠️⚠️ 🔗 This project has moved! ⚠️⚠️⚠️</strong>
+  <br/><br/>
+  <a href="https://github.com/EvolvingLMMs-Lab/LLaVA-OneVision-1.5-RL" style="font-size:28px; text-decoration: none; color:#0969DA;">
+    Visit the new repository →
+  </a>
+</p>
+
+---
+
 <p align="center">
   <picture>
     <img alt="LLaVA-OneVision-1.5-RL" src="./asset/logo.png" width="600" style="max-width: 100%;">
